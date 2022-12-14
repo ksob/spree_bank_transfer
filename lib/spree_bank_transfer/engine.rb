@@ -7,7 +7,7 @@ module SpreeBankTransfer
     config.autoload_paths += %W(#{config.root}/lib)
 
     initializer 'spree.register.payment_methods', after: :after_initialize do |_app|
-      _app.config.spree.payment_methods << Spree::PaymentMethod::BankTransfer
+      #_app.config.spree.payment_methods << Spree::PaymentMethod::BankTransfer
     end
 
     # use rspec for tests
